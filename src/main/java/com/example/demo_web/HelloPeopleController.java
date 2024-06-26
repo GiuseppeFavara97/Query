@@ -2,11 +2,9 @@ package com.example.demo_web;
 
 import org.springframework.web.bind.annotation.*;
 
-import static org.springframework.web.bind.annotation.RequestMethod.GET;
-
 @RestController
 @RequestMapping("/v1")
-public class HelloWorldController {
+public class HelloPeopleController {
 
     @GetMapping(path = "/ciao")
     public String ciao(@RequestParam String nome, @RequestParam String provincia ){
